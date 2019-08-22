@@ -10,6 +10,7 @@
 - **Selector**: sự kết hợp giữa facility và level
 - **Action**: đại diện cho địa chỉ messages tương úng với facility.level.Action có thể là một tên file hoặc có thể là một host name đứng trc kí tự @
 **Trong facility** có cácloại facility đc sử dụng và quy định trong hệ thống Linux
+
 |  Facility  |	Miêu tả |
 |------------|----------|
 | auth  |  Các hoạt động liên quan đến yêu cầu tên và mật khẩu (getty, su, login)|
