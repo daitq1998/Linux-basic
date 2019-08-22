@@ -53,11 +53,16 @@
 - Log files rất quan trọng đối với quản trị viên để theo dõi tình trạng của hệ thống/ứng dụng, tuy vậy nếu quá nhiều log file sẽ khiến dung lượng ổ cứng bị quá tải cũng như gây khó khăn trong việc tìm kiếm thông tin cần thiết.
 ##Lệnh`cron`
 - Có nhiều công việc trên linux phải lập lịch một các thường xuyên.Nên `cron` dùng để sắp xếp thực hiện các lệnh theo lịch trình
-- `cron` bao gồm `cron daemon` và đc khỏi động bởi tiến trình init 
+- `cron` bao gồm `cron daemon`tức là nó được chạy ngầm mãi mãi một khi nó được khởi động lên. Như các deamon khác thì bạn cần khởi động lại nó nếu như có thay đổi thiết lập gì đó và đc khỏi động bởi tiến trình init 
 - `cron` đọc các lịch công việc từ `/etc/crontab` và trong file `/var/spoon/cron`
 - Thư mục cron này lưu trữ các file lập lịch (thường được gọi là crontab hay cron table) cho những người sử dụng thông thường được phép chạy các công việc cron. Là một superuser, bạn có thể xác định một danh sách những người sử dụng được phép chạy các công việc cron trong file `/etc/cron.allow`
 - Tương tự, ta có thể xác định những người sử dụng không được phép thực hiện các công việc cron trong file `/etc/cron.deny`. Cả hai file này đều sử dụng một định dạng cơ bản: một username trên một dòng. Nếu một người được phép thực hiện các công việc cron, người đó có thể sử dụng tiện ích crontab để thực hiện công việc lập lịch
-##Lệnh `at`
+- Crontab files không cho phép tạo hoặc chỉnh sửa trực tiếp với bất kỳ trình text editor nào, trừ phi bạn dùng lệnh crontab.
+- **Một số lệnh thường dùng:**
+- `crontable -e`: Tạo hoặc chỉnh sửa file crontab
+- `crontable -l`: Hiển thị file crontab
+- `crontab -r`: xóa file crontab
+## Lệnh `at`
 - Linux có các lệnh cho phép thực hiện các tiến trình ở thời điểm định trc thông qua lệnh at. Thời điểm thực hiện tiến trình đc nhập và thông qua tham số của lệnh at
 - Chương trình tại cho phép một lệnh hoặc tập lệnh được lên lịch cho một lần thực hiện tại một thời gian sau Chức năng lập lịch trình thực sự khá linh hoạt và có thể lấy một số định dạng. Ví dụ, bạn có thể lên lịch một sự kiện liên quan đến thời gian hiện tại
 - cú pháp: `at [time] <các lệnh thực hiện>`
