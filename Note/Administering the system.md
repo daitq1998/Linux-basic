@@ -9,6 +9,7 @@
 - **Priority (level)** :mức độ quan trong của log message đc chỉ định
 - **Selector**: sự kết hợp giữa facility và level
 - **Action**: đại diện cho địa chỉ messages tương úng với facility.level.Action có thể là một tên file hoặc có thể là một host name đứng trc kí tự @
+
 **Trong facility** có cácloại facility đc sử dụng và quy định trong hệ thống Linux
 
 |  Facility  |	Miêu tả |
@@ -28,6 +29,20 @@
 | ntp |	Các thông báo liên quan đến giao thức thời gian mạng. |
 | user |	Các tiến trình người dùng thông thường. |
 | uucp |	Hệ thống phụ UUCP.|
+- Theo măc định các bản tin log của hệ thống được syslog lưu vào trong thư mục /var/log, và được lưu riêng rẽ đối với từng tác vụ trong hệ thông nhưng đối với tiến trình cron thì sẽ lưu trong file cron.log.
+-file câu hình của linux đc lưu trong bản ghi có đường dẫn là : `/etc/rsyslog.conf`.  nhưng các rule được định nghĩa riêng trong `/etc/rsyslog.d/50-defaul.conf` . File rule này được khai báo include từ file cấu hình `/etc/rsyslog.conf`
+**Syslog priority**
+
+| Priority | Miêu tả |
+| -------- | ------- |
+| debug | Các message ở chế độ debug |
+| ìno | Các message mang thông tin |
+| notice | message mang tính chất thông báo |
+| warning | Các mesage mang tính chất cảnh cáo |
+| ere | cá message lỗi |
+| crit | các message nguy hiểm |
+| alert | các mesage về các hành động phải thực hiện ngay |
+| emerg | message khi hệ thống không dùng đc nữa |
 
 #Lệnh `at`
 Chương trình tại cho phép một lệnh hoặc tập lệnh được lên lịch cho một lần thực hiện tại một thời gian sau Chức năng lập lịch trình thực sự khá linh hoạt và có thể lấy một số định dạng. Ví dụ, bạn có thể lên lịch một sự kiện liên quan đến thời gian hiện tại
