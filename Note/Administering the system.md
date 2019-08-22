@@ -36,13 +36,16 @@
 | Priority | Miêu tả |
 | -------- | ------- |
 | debug | Các message ở chế độ debug |
-| ìno | Các message mang thông tin |
+| info | Các message mang thông tin |
 | notice | message mang tính chất thông báo |
 | warning | Các mesage mang tính chất cảnh cáo |
 | ere | cá message lỗi |
 | crit | các message nguy hiểm |
 | alert | các mesage về các hành động phải thực hiện ngay |
 | emerg | message khi hệ thống không dùng đc nữa |
+
+**Rotating log files**
+
 
 #Lệnh `at`
 Chương trình tại cho phép một lệnh hoặc tập lệnh được lên lịch cho một lần thực hiện tại một thời gian sau Chức năng lập lịch trình thực sự khá linh hoạt và có thể lấy một số định dạng. Ví dụ, bạn có thể lên lịch một sự kiện liên quan đến thời gian hiện tại
