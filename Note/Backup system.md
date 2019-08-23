@@ -1,0 +1,15 @@
+# Lệnh `rsync`
+- Là lệnh dùng để sao lưu dữ liệu mạnh mẽ. là một công cụ dùng để sao chép và đồng bộ file/thư mục được dùng rất phổ biến. Với sự trợ giúp của rsync, bạn có thể đồng bộ dữ liệu trên local hoặc giữa các server với nhau một cách dễ dàng.
+- **Câu lệnh căn bản của rsync **:`rsync options source destination`
+- Trong đó:
+- **source**: là dữ liệu nguồn
+- **option**:là các tùy chọn
+- **destination**:là dữ liệu đích
+- **Các tùy chọn**
+- `-v`: Hiển thị trạng thái kết quả
+- `-r`:copy dữ liệu recursively, nhưng không đảm bảo thông số của file và thư mục
+- `-a`:cho phép copy dữ liệu recusively và dữ nguyên các thông số của thư mục và file 
+-`-z`:nén dữ liệu transfer, tiết kiệm bằng thông nhưng tốn thời gian
+-`-h`:human-readable output kết quả để đọc
+-`--delete`: xóa dữ liệu ở destination nếu source không có dữ liệu
+-`--exclude`: loại trừ những dữ liệu không muốn truyền đi nếu ta cần loại ra nhiều file hoặc nhiều folder 
