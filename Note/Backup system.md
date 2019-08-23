@@ -53,3 +53,21 @@
 -*if*:là địa chỉ nguồn dữ liệu nơi nó bắt đầu đọc
 -*of*:viết đầu ra của file
 -*option*:tùy chọn các câu lệnh
+- `bs`: quá trình đọc ghi bao nhiêu byte một lần đọc
+- `cbs`: quá trình chuyển đổi bao nhiêu byte một lần
+- `count`:thực  hiện bao nhiêu block trong quá trình thực thi câu lệnh
+- `if` : đường dẫn đọc đầu vào
+- `of`: đường dẫn ghi đầu ra
+- `ibs`: chỉ ra số byte mỗi lần đọc
+- `obs`:chỉ ra số byte mỗi lần ghi
+- `skip`: bỏ qua bao nhiêu block đầu vào
+- `conv`: chỉ ra các tác vụ cu thể của câu lệnh 
+ **Trong `conv` còn có các tùy chọn**
+ -`ascii`: Chuyển đôi từ mã EBCDIC sáng ASCII
+ - `ebcdic` : Chuyển đổi từ mã ASCII sang EBCDIC
+ - `lcase`: chuyển đổi từ chữ thường sáng chữ in hoa
+ - `ucase`: chuyển đổi từ chữ hoa sang chưx thường
+ - `nocreat`: không tạo ra file đầu ra
+ - `noerror` : tiếp tục sao chép dữ liệu khi đầu vào bị lỗi
+ - ` sync`: đồng bộ dữ liệu với ổ đang sao chép sang
+**Ví dụ**: sao lưu toàn bộ dữ liệu tf ổ cứng sáng ổ cứng khác `#dd if=/dev/sda of=/dev/sdb conv=noerror,sync`
