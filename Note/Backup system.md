@@ -62,6 +62,7 @@
 - `obs`:chỉ ra số byte mỗi lần ghi
 - `skip`: bỏ qua bao nhiêu block đầu vào
 - `conv`: chỉ ra các tác vụ cu thể của câu lệnh 
+
  **Trong `conv` còn có các tùy chọn**
  -`ascii`: Chuyển đôi từ mã EBCDIC sáng ASCII
  - `ebcdic` : Chuyển đổi từ mã ASCII sang EBCDIC
