@@ -15,7 +15,7 @@
 - `--delete`: xóa dữ liệu ở destination nếu source không có dữ liệu
 - `--exclude`: loại trừ những dữ liệu không muốn truyền đi nếu ta cần loại ra nhiều file hoặc nhiều folder ở nhiều đường đẫn khác nhau thì mỗi loại phải thêm một `--exclude` tương ứng
 **Ví dụ**: Copy thư mục rpmpkgs trong thư mục root xem /tmp/backups/ trên local:
-- `rsync -avzh /root/rpmpkgs /tmp/backups/
+- `rsync -avzh /root/rpmpkgs /tmp/backups/`
 - `rsync -avzh /root/rpmkgs /tmp/backups1/`
 **Ví dụ**: copy thư mục rpmpkgs lên server vào thư mục home
 - `rsync -avzh rpmpkgs/ root@192.168.21.145:/home/
