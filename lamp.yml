@@ -5,3 +5,25 @@
   tasks:
    - name: Install apache
      apt: name=apache2 update_cache=yes state=latest
+   - name: Install php
+     apt:
+      name: php7.2
+   - name: Install package php
+     apt:
+      pkg:
+      - php-cli
+      - php-curl
+      - php-fpm
+      - php-intl
+      - php-json
+      - sqlite3
+      - libapache2-mod-php
+      - php-mysql
+      - php7.2-fpm
+      - php
+   - name: install php
+     apt:
+         name: php7.2
+         update_cache: yes
+         state: present
+      
