@@ -4,6 +4,6 @@
   tasks:
   - name: Download and Extract WorPress
     unarchive:
-      url: https://wordpress.org/latest.tar.gz
+      src: https://wordpress.org/latest.tar.gz
       dest: /var/www/
       remote_user: yes
