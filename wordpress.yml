@@ -6,4 +6,9 @@
     unarchive:
       src: https://wordpress.org/latest.tar.gz
       dest: /var/www/
-      remote_user: yes
+      remote_user: yes  
+  - name: Extract wordpress
+    unarchive:
+     src: /var/www/wordpress.tar.gz
+     dest: /var/www/
+     copy: no
