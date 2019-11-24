@@ -12,3 +12,15 @@
      src: /var/www/wordpress.tar.gz
      dest: /var/www/
      copy: no
+  - name: rename derectory
+    command: "mv /var/www/wordpress /var/www/nguyendai.com"
+  - name: move derectory
+    command: " mv /var/www/nguyendai.com/wp-config-sample.php /var/www/nguyendai.com/wp-config.php"
+  - name: Change owner and mode
+    file:
+     path: /var/www/nguyendai.com
+     owner: www-data
+     group: www-data
+     recurse: yes
+     state: directory
+     mode: '0755'
