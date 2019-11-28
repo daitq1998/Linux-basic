@@ -24,3 +24,33 @@
      recurse: yes
      state: directory
      mode: '0755'
+     - name: Copy and edit file wp-config.php
+    template:
+      src: /home/daitq1998/wordpress-playbook/roles/config/wp-config.php
+      dest: /var/www/nguyendai.com/wp-config.php
+      backup: yes
+  - name: Copy and edit file
+    template:
+      src: /home/daitq1998/wordpress-playbook/roles/config/000-default.conf
+      dest: /etc/apache2/sites-available/000-default.conf
+      backup: yes
+    notify: restart apache2
+  - name: add hosts db
+    become: yes
+    become_user: root
+    shell: echo "192.168.122.221 daina" >> /etc/hosts
+  - name: add web-server hosts
+    become: yes
+    become_user: root
+    shell: echo "192.168.122.148 nguyendai.com" >> /etc/hosts
+    when: "'anhdai' in inventory_hostname"
+  - name: add web-server2 hosts
+    become: yes
+    become_user: root
+    shell: echo "192.168.122.95 nguyendai.com" >> /etc/hosts
+    when: "'daitq' in inventory_hostname"
+  handlers:
+     - name: restart apache2
+       service: 
+        name: apache2
+        state: restarted
