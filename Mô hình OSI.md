@@ -10,5 +10,6 @@
       - Application `Tầng ứng dụng`
   - Ý nghĩa và Đơn vị của các tầng
 
-  |   | Mô hình 7 tầng OSI | Đơn vị dữ liệu |
-  |---|--------------------|----------------|
+  |   | Mô hình 7 tầng OSI | Chức năng | Đơn vị dữ liệu |
+  |---|--------------------|-----------|----------------|
+  | 7 | Application | 
