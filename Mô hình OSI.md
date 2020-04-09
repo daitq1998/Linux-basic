@@ -8,4 +8,6 @@
       - Session `Tầng phiên`
       - Presentaion `Tầng trình diễn`
       - Application `Tầng ứng dụng`
-   
+  - Ý nghĩa và Đơn vị của các tầng
+  |   | Mô hình 7 tầng OSI | Đơn vị dữ liệu |
+  | - |------------------- |--------------- |
