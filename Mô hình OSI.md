@@ -14,4 +14,5 @@
   |---|--------------------|-----------|----------------|
   | 7 | Application | Là tầng gần nhất với người dùng. Tầng ứng dụng không phải là hệ điều hành của thiết bị nhưng nó thường cùng cấp các dịch vụ email (SNMP & POP3), trình duyệt web( HTTP) và dịch vụ chuyển tệp (FTP) | Data |
   | 6 | Presentation | Là tầng trình bày dữ liều chuyển tới tầng Application, nhiều phương tiện làm việc ở đây như MP4, JPEG, GIF chức nằng mã hóa giải mã dữ liệu cũng có ở lớp này | Data |
-  | 5 | Session | Vai trò của tầng Session là cài đặt, quản lý, và chấm dứt các phiên hoặc đối thoại giữa các thiết bị. chúng diễn ra trên các liên kết logic |
+  | 5 | Session | Vai trò của tầng Session là cài đặt, quản lý, và chấm dứt các phiên hoặc đối thoại giữa các thiết bị. chúng diễn ra trên các liên kết logic và điều thực sự xảy ra là sự kết hợp của hai ứng dụng phần mềm. SQL, RPC và NFS đều hoạt động ở Lớp phiên | Data |
+  | 6 | Transport | 
