@@ -20,4 +20,7 @@
   | 2 | Data link | Gồm các địa chỉ vật lý, Bao gồm 2 lớp:  Kiểm soát liên kết logic Logical Link control (LLC) và Kiểm soát truy cập phương tiện Media access control (MAC) | Frame | LAN và WAN(HDLC, PPP, Frame Relay) |
   |1 | Physical | Mã hóa truyền các bit dữ liệu: Tín hiệu điện và tín hiệu vô tuyến điện | Bit | FDDI, Ethernet |
   - **Mô hình TCP/IP**
-  
+    - Mô hình TCP/IP là một khung khác và thay thế cho mô hình OSI. Mô hình TCP/IP gồm 5 lớp. 
+      - Bao gồm:
+        |   | Mô hình 7 tầng OSI | Chức năng | Đơn vị dữ liệu | Giao thức phổ biến |
+        |---|--------------------|-----------|----------------|--------------------|
