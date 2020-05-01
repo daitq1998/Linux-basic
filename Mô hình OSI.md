@@ -19,3 +19,5 @@
   | 3 | Networks | Xác định đường dẫn, Địa chỉ logic nguồn và đích | Packet, Datagram| IP, IPX, Apple talk |
   | 2 | Data link | Gồm các địa chỉ vật lý, Bao gồm 2 lớp:  Kiểm soát liên kết logic Logical Link control (LLC) và Kiểm soát truy cập phương tiện Media access control (MAC) | Frame | LAN và WAN(HDLC, PPP, Frame Relay) |
   |1 | Physical | Mã hóa truyền các bit dữ liệu: Tín hiệu điện và tín hiệu vô tuyến điện | Bit | FDDI, Ethernet |
+  - **Mô hình TCP/IP**
+  
