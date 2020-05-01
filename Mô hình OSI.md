@@ -22,5 +22,10 @@
   - **Mô hình TCP/IP**
     - Mô hình TCP/IP là một khung khác và thay thế cho mô hình OSI. Mô hình TCP/IP gồm 5 lớp. 
       - Bao gồm:
-        |   | Mô hình 7 tầng OSI | Chức năng | Đơn vị dữ liệu | Giao thức phổ biến |
-        |---|--------------------|-----------|----------------|--------------------|
+        |   | Mô hình 5 tầng TCP/IP | Giao thức phổ biến |
+        |---|-----------------------|--------------------|
+        | 5 | Applycation | Telnet, FTP, DNS, RIP, HTTP|
+        | 4 | Transport/Host to host | TCP, UDP, ICMP |
+        | 3 | Network | IPSec, IP |
+        | 2 | Data Link | Ethernet, Frame Relay, PPP |
+        | 1 | Link, Network interface, Physical | Bit on the wire |
