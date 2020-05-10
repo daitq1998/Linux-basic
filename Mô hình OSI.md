@@ -36,5 +36,5 @@
         | Transport | 4 | Transport |
         | Internet | 3 | Network | 
         | Link/Network interface | 2 | Data link |
-        | 1 | Physical |
-        
+        |  | 1 | Physical |
+      - Một số giao thức phổ biến thường dùng
