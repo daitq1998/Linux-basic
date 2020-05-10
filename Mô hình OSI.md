@@ -29,7 +29,7 @@
         | 3 | Network | IPSec, IP |
         | 2 | Data Link | Ethernet, Frame Relay, PPP |
         | 1 | Link, Network interface, Physical | Bit on the wire |
-      - Mô hình TCP/IP của và mô hình TCP/ip cũ đã thay đổi như thế nào 
+      - Mô hình TCP/IP của và mô hình TCP/ip cũ đã thay đổi như thế nào :
         | Mô hình TCP/ip cũ | Layer | Mô hình TCP/IP mới |
         | Application | 5 | Application | 
         | Transport | 4 | Transport |
