@@ -1,5 +1,5 @@
 # Mô hình OSI
-- **Mô hìnhOSI**
+- **Mô hình OSI**
    - Gồm 7 tầng 
       - Phisical `Tầng vật lý`
       - Datalink `Tầng liên kết dữ liệu`
@@ -37,4 +37,19 @@
         | Internet | 3 | Network | 
         | Link/Network interface | 2 | Data link |
         |  | 1 | Physical |
+      - Khái niệm về TCP/IP: TCP là một bộ hoàn chỉnh các giao thức và dịch vụ cho phép giao tiếp diễn ra trên mạng. TCP/IP là bộ tiêu chuẩn có sẵn và được sử dụng miễn phí được duy trì bởi Lực lượng đặc nhiệm kỹ thuật Internet (IETF) à được sử dụng để kết nói thiết bị đầu cuối   
       - Một số giao thức phổ biến thường dùng
+       - **Transmission Control Protocol (TCP)**: TCP hoạt động ở tầng vận chuyển của mô hình OSI. Nó cung cấp một dịch vụ hướng kết nối để truyền dữ liệu đáng tin cậy giữa các thiết bị mạng. TCP cũng cung cấp kiểm soát luồng tuần tự, cửa sổ và phát hiện lỗi. Các cổng của TCP: 
+       - **FTP Data: 20**
+       - **FTP Control: 21**
+       - **SSH: 22**
+       - **Telnet: 23**
+       - **SMTP: 25**
+       - **DNS: 53**
+       - **HTTP: 80**
+       - **POP3: 110**
+       - **NNTP: 119**
+       - **NTP: 123**
+       - **TLS/SSL: 443**
+      - **Internet Protocol (IP)**: là giao thức hoạt động ở lớp mạng của mô hình OSI. Nó không kết nối và vận chuyển dữ liệu qua mạng, Địa chỉ IP là một giao thức của Internet. kiểm tra IP địa chỉ lớp mạng của mỗi gói và xác định đường dẫn tốt nhất để mỗi gói đến đích
+      - **User Diagram Protocol (UDP)**: UDP hoạt động ở lớp vận chuyển của mô hình OSI. Nó vận chuyển thông tin giữa các thiết bị mạng 
