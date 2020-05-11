@@ -56,4 +56,5 @@
       - **DNS: 63**
       - **TFTP: 69**
       - **SNMP: 167/162**
-      - **File Transfer Protocol (FTP)**: là giao thức truyền file 
+      - **File Transfer Protocol (FTP)**: là giao thức truyền file FTP hoạt động ở tầng ứng dụng và chịu trách nhiệm vận chuyển sữ liệu đáng tin cậy qua một liên kết từ xa. Bởi vì FTP sử dụng TCP để truyền dữ liệu. FTP có thể gỡ lỗi lưu lượng bằng lệnh ip ftp. FTP sử dụng cổng 20 và 21. Với giao thức FTP các máy Client trong mạng có thể kết nối tới các máy FTP để gửi và lấy dữ liệu. Người dùng có thể truy cập vào máy chủ FTP đề truyền và nhận dữ liệu từ xa
+      - **Trivial File Transfer Protocol (TFTP)**: TFTP là một giao thức truyền file đơn giản cho phép client có thể upload hoặc dowload các tệp tin remote host như swith, router, server. TFTP chỉ đọc và ghi tệp từ các máy chủ từ xa. Do không được bảo mật trong quá trình truyền tệp nên TFTP thường được ứng dụng trong mạng cục bộ (LAN) để backup, import config IOS trên các thiết bị switch router firewall, hoặc cài đặt license cho các thiết bị này.TFTP sử dụng giao thức UDP làm giao thức truyền tải và sử dụng cổng 69 làm cổng mặc định 
