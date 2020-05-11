@@ -39,7 +39,7 @@
         |  | 1 | Physical |
       - Khái niệm về TCP/IP: TCP là một bộ hoàn chỉnh các giao thức và dịch vụ cho phép giao tiếp diễn ra trên mạng. TCP/IP là bộ tiêu chuẩn có sẵn và được sử dụng miễn phí được duy trì bởi Lực lượng đặc nhiệm kỹ thuật Internet (IETF) à được sử dụng để kết nói thiết bị đầu cuối   
       - Một số giao thức phổ biến thường dùng
-       - **Transmission Control Protocol (TCP)**: TCP hoạt động ở tầng vận chuyển của mô hình OSI. Nó cung cấp một dịch vụ hướng kết nối để truyền dữ liệu đáng tin cậy giữa các thiết bị mạng. TCP cũng cung cấp kiểm soát luồng tuần tự, cửa sổ và phát hiện lỗi. Các cổng của TCP: 
+       - **Transmission Control Protocol (TCP)**: TCP hoạt động ở tầng vận chuyển của mô hình OSI. TCP có khả năng truyền và nhận dữ liệu cùng một lúc — song công (full-duplex). Tính năng phục hồi dữ liệu bị mất trên đường truyền.Nó cung cấp một dịch vụ hướng kết nối để truyền dữ liệu đáng tin cậy giữa các thiết bị mạng. TCP cũng cung cấp kiểm soát luồng tuần tự, cửa sổ và phát hiện lỗi. Các cổng của TCP: 
        - **FTP Data: 20**
        - **FTP Control: 21**
        - **SSH: 22**
@@ -51,5 +51,9 @@
        - **NNTP: 119**
        - **NTP: 123**
        - **TLS/SSL: 443**
-      - **Internet Protocol (IP)**: là giao thức hoạt động ở lớp mạng của mô hình OSI. Nó không kết nối và vận chuyển dữ liệu qua mạng, Địa chỉ IP là một giao thức của Internet. kiểm tra IP địa chỉ lớp mạng của mỗi gói và xác định đường dẫn tốt nhất để mỗi gói đến đích
-      - **User Diagram Protocol (UDP)**: UDP hoạt động ở lớp vận chuyển của mô hình OSI. Nó vận chuyển thông tin giữa các thiết bị mạng 
+      - **Internet Protocol (IP)**: là giao thức hoạt động ở lớp mạng của mô hình OSI. Nó không kết nối và vận chuyển dữ liệu qua mạng, Địa chỉ IP là một giao thức của Internet. kiểm tra IP địa chỉ lớp mạng của mỗi gói và xác định đường dẫn tốt nhất để mỗi gói đến đích. 
+      - **User Diagram Protocol (UDP)**: UDP hoạt động ở lớp vận chuyển của mô hình OSI. Nó vận chuyển thông tin giữa các thiết bị mạng. Không giống như TCP, không có kết nối nào thiết lập được trước tiên. UDP là không kết nối cung cấp nỗ lực tốt nhất và không đảm bảo dữ liệu không đến đích. UDP không quan tâm tới việc có gửi chính xác gói tin tới đúng địa chỉ hay không, không có cơ chế phục hồi dữ liệu bị mất. Giao thức UDP nhanh và hiệu quả hơn đối với các mục tiêu kích thước nhỏ và yêu cầu khắt khe về thời gian. Bản chất không trạng thái nên UDP hữu dụng đối với việc trả lời các truy vấn nhỏ với số lượng lớn người yêu cầu. UDP tiêu thụ ít băng thông hơn TCP phù hợp với các ứng dụng có độ trễ thấp. Các cổng của UDP :
+      - **DNS: 63**
+      - **TFTP: 69**
+      - **SNMP: 167/162**
+      - **File Transfer Protocol (FTP)**: là giao thức truyền file 
