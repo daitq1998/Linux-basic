@@ -24,7 +24,7 @@
       - Bao gồm:
         |   | Mô hình 5 tầng TCP/IP | Giao thức phổ biến |
         |---|-----------------------|--------------------|
-        | 5 | Applycation | Telnet, FTP, DNS, RIP, HTTP|
+        | 5 | Applycation | Telnet, FTP, DNS, RIP, HTTP |
         | 4 | Transport/Host to host | TCP, UDP, ICMP |
         | 3 | Network | IPSec, IP |
         | 2 | Data Link | Ethernet, Frame Relay, PPP |
