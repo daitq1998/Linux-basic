@@ -23,10 +23,10 @@
       - **Routed protocol và routing protocol**:
        - *Routed protocol*: quy định dạng format và cách sử dụng các trường trong packet nhằm chuyển các packet từ nơi này sang nơi khác ví dụ như": IP, IPX
        - *Routing protocol*: Cho phép các router kết nối với nhau và cập nhật thông tin của nhau nhờ bảng routing. Routing protocol có thể sử dụng các routed protocol để truyền thông tin giữa các router như RIP, IGRP
-      - **Một số routing protocol tiêu biểu**
+      - **Một số routing protocol tiêu biểu**:
       | Tên | Tên đầy đủ | Routed protocol hỗ trợ |
-      | --- | ---------- | ---------------------- |
-      | RIP | Routing Information Protocol | TCP/IP, IPX |
+      |-----|------------|------------------------|
+      | RIP | Routing Information Protocol | TCP/IP,IPX |
       | OSPF | Open Shortest Path First | TCP/IP |
       | IGRP | Interior Gateway Routing Protocol | TCP/IP |
       | EGP | Exterior Gateway Protocol | TCP/IP |
