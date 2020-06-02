@@ -26,3 +26,12 @@
      - **Một số routing protocol tiêu biểu**:
         -    | Tên | Tên đầy đủ | Routed protocol hỗ trợ |
              | --- | ---------- | ---------------------- |
+             | RIP | Routing Information Protocol | TCP/IP,IPX |
+             | OSPF | Open Shortest Path First | TCP/IP |
+             | IGRP | Interior Gateway Routing Protocol | TCP/IP |
+             | EGP | Exterior Gateway Protocol | TCP/IP |
+             | BGP | Border Gateway Protocol | TCP/IP |
+             | IS-IS | Intermediate System to Intermediate System | TCP/IP |
+             | EIGRP | Enhanced Interior Gateway Routing Protocol | TCP/IP |
+             | NLSP | NetWare Link Services Protocol | IPX/SPX |
+             | RTMP | Routing Table Maintenance Protocol | Apple Talk | 
