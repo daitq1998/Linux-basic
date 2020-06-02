@@ -32,6 +32,6 @@
       | EGP | Exterior Gateway Protocol | TCP/IP |
       | BGP | Border Gateway Protocol | TCP/IP |
       | IS-IS | Intermediate System to Intermediate System | TCP/IP |
-      | EIGRP| Enhanced Interior Gateway Routing Protocol | TCP/IP |
+      | EIGRP | Enhanced Interior Gateway Routing Protocol | TCP/IP |
       | NLSP | NetWare Link Services Protocol | IPX/SPX|
       | RTMP | Routing Table Maintenance Protocol | Apple Talk | 
