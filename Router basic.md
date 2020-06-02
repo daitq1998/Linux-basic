@@ -25,4 +25,4 @@
        - *Routing protocol*: Cho phép các router kết nối với nhau và cập nhật thông tin của nhau nhờ bảng routing. Routing protocol có thể sử dụng các routed protocol để truyền thông tin giữa các router như RIP, IGRP
      - **Một số routing protocol tiêu biểu**:
            | Tên | Tên đầy đủ | Routed protocol hỗ trợ |
-           |-----|------------|------------------------|
+           | --- | ---------- | ---------------------- |
