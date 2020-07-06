@@ -11,5 +11,5 @@
 - Các tập lệnh được lưu trữ dứoi mộ tên tùy ý. Nhưng lưu ý với dòng đầu tiên trong bash shell phải bắt đầu bằng `shebang` 
 - `#!/bin/bash` 
 - *Ví dụ;*
-    `#!/bin/bash
-    echo "Ban la ai"`
+    - `#!/bin/bash`
+    - `echo "Ban la ai"`
