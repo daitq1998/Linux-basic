@@ -24,8 +24,8 @@
 2. Sử dụng biến
    - Vẫn ở file `sh` đó nhập thêm dòng 
     `#!/bin/bash`
-       - `echo " hoc bash shell "`
-       - `var="de lam system"
+       - `echo " hoc bash shell"`
+       - `var="de lam system"`
        - `echo " hoc bash shell, $var"`
    - Đọc dữ liệu vào từ người dùng
       Lệnh `read` là lệnh đọc dữ liệu từ người dùng đọc một dòng tiêu chuẩn vào tên biến và in tiêu chuẩn đầu ra
@@ -34,10 +34,17 @@
       - `echo "$name"`
    - Trích dẫn chuỗi: Trích dẫn chuỗi có tầm quan trọng để mở rộng chuỗi trong bash 
       - Trong bash có hai loại trích dẫn: Trích dẫn mạnh (Strong) sử dụng dấu`' '`,Trích dẫn yếu (Weak) sử dụng dấu `"  "`
-      vd:
-      Sử dụng Strong
-      - `
-      `
+    - vd:
+     - Sử dụng Strong
+      - `#!/bin/bash`
+      - `read name`
+      - `echo '$name'`
+     - Sử dụng Weak
+      - `#!/bin/bash
+      - `read name`
+      - `echo "$name"
+      chạy hai file này bạn sẽ thấy khác nhau
+      
      
        
        
