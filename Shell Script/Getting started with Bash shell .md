@@ -33,8 +33,11 @@
       `read name`
       `echo "$name"`
    - Trích dẫn chuỗi: Trích dẫn chuỗi có tầm quan trọng để mở rộng chuỗi trong bash 
-      - Trong bash có hai loại trích dẫn: Trích dẫn mạnh (Strong) sử dụng dấu`''`, Trích dẫn yếu (Weak) s
-      
+      - Trong bash có hai loại trích dẫn: Trích dẫn mạnh (Strong) sử dụng dấu`' '`,Trích dẫn yếu (Weak) sử dụng dấu `"  "`
+      vd:
+      Sử dụng Strong
+      `
+     
        
        
        
