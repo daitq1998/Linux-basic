@@ -35,3 +35,10 @@
              | EIGRP | Enhanced Interior Gateway Routing Protocol | TCP/IP |
              | NLSP | NetWare Link Services Protocol | IPX/SPX |
              | RTMP | Routing Table Maintenance Protocol | Apple Talk | 
+     - RIP(Routing information protocol): là giao thức đầu tiên được sử dụng. RIP dựa trên thuật toán distance vecto được sử dụng rộng rãi nhưng phud hợp cho hệ thống nhỏ và ít phức tạp. RIP tự động cập nhật thông tin router bằng cách gửi các broadcast lên mạng mỗi 30s và định tuyến đường đi bằng các hop count (path length). Số lượng hop tối đa là 15
+     - IGRP(Interio gateway routing protocol): là các routing protocol được sử dụng nhiều nhất (phát triển bởi cisco) có một số đặc điểm
+       - Sử dụng cơ chế advanced distance vector. Chỉ cập nhật thông tin khi có sự thay đổi cấu trúc. Xác định đường dựa trên các yếu tố như: số hop, băng thông, độ tin cậy, độ trì hoãn, có khả năng vượt quá giới hạn 15 hop, hỗ trợ nhiều đường liên kết và khả năng cân bằng tải. Linh hoạt thích hợp cho hệ thống lớn do dựa trên thuật toán linkstate và distance vector
+     - OSPF: là giao thức định tuyến dự trên thuật toán tìm đường link-state có khả năng cập nhật và thay đổi routing table một cách nhanh nhất sử dụng IP multicast làm phương pháp truyền nhận thông tin, phù hợp với hệ thống lớn có nhiêu router liên kết với nhau
+  - **2. Các chế dộ làm việc của Router(Router mode)
+     -**User mode**
+    
