@@ -45,5 +45,5 @@
      - **Privileged mode(Chế độ đặc quyền)**: Nhập lệnh `enable` ở chế độ user mode để chuyển sáng chế độ Privileged. Ở chế độ này người dùng có thể xem điuọc thông tin chi tiết của toàn bộ định tuyến và là chìa khóa để vào Configuration Mode cho phép cấu hình tất cả các chức năng hoạt động của router
      - ** Global Configuration Mode**: là chế độ cho phép cấu hình tất cả các router Cisco bao gồm interface, protocol, các line console, vty(telnet), tty. Các lệnh ở confuration mode ảnh hưởng trực tiếp đến cấu hình của router
        - Confuration mode có nhiều mode nhỏ, ngoài cùng là các global configuration mode sau đó là các interface configuration mode, line configuration mode, routing configuration mode.
-       
+       ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/co%CC%80nig.PNG)
     
