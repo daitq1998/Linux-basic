@@ -39,17 +39,17 @@
      - IGRP(Interio gateway routing protocol): là các routing protocol được sử dụng nhiều nhất (phát triển bởi cisco) có một số đặc điểm
        - Sử dụng cơ chế advanced distance vector. Chỉ cập nhật thông tin khi có sự thay đổi cấu trúc. Xác định đường dựa trên các yếu tố như: số hop, băng thông, độ tin cậy, độ trì hoãn, có khả năng vượt quá giới hạn 15 hop, hỗ trợ nhiều đường liên kết và khả năng cân bằng tải. Linh hoạt thích hợp cho hệ thống lớn do dựa trên thuật toán linkstate và distance vector
      - OSPF: là giao thức định tuyến dự trên thuật toán tìm đường link-state có khả năng cập nhật và thay đổi routing table một cách nhanh nhất sử dụng IP multicast làm phương pháp truyền nhận thông tin, phù hợp với hệ thống lớn có nhiêu router liên kết với nhau
-  - **2. Các chế dộ làm việc của Router(Router mode)**
-     - **User mode**: Là chế độ đầu tiên khi khởi động bộ định tuyến là chế dộ người dùng và người dùng thực thi ở chế dộ này các câu lệnh rất hạn chế
-         `Router>`laf dấu hiệu nhận biết ở chế độ này
-     - **Privileged mode(Chế độ đặc quyền)**: Nhập lệnh `enable` ở chế độ user mode để chuyển sáng chế độ Privileged. Ở chế độ này người dùng có thể xem điuọc thông tin chi tiết của toàn bộ định tuyến và là chìa khóa để vào Configuration Mode cho phép cấu hình tất cả các chức năng hoạt động của router
-     - ** Global Configuration Mode**: là chế độ cho phép cấu hình tất cả các router Cisco bao gồm interface, protocol, các line console, vty(telnet), tty. Các lệnh ở confuration mode ảnh hưởng trực tiếp đến cấu hình của router
+ - **2. Các chế dộ làm việc của Router(Router mode)**
+   - **User mode**: Là chế độ đầu tiên khi khởi động bộ định tuyến là chế dộ người dùng và người dùng thực thi ở chế dộ này các câu lệnh rất hạn chế `Router>`là dấu hiệu nhận biết ở chế độ này
+    - **Privileged mode(Chế độ đặc quyền)**: Nhập lệnh `enable` ở chế độ user mode để chuyển sáng chế độ Privileged. Ở chế độ này người dùng có thể xem điuọc thông tin chi tiết của toàn bộ định tuyến và là chìa khóa để vào Configuration Mode cho phép cấu hình tất cả các chức năng hoạt động của router
+    - **Global Configuration Mode**: là chế độ cho phép cấu hình tất cả các router Cisco bao gồm interface, protocol, các line console, vty(telnet), tty. Các lệnh ở confuration mode ảnh hưởng trực tiếp đến cấu hình của router
        - Confuration mode có nhiều mode nhỏ, ngoài cùng là các global configuration mode sau đó là các interface configuration mode, line configuration mode, routing configuration mode.
        ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/co%CC%80nig.PNG)
        ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/mode.PNG)
-    - **Interface Configuration mode**:  chế độ này cho pheps người quản trị cấu hình interface của router như Fast Ethernet, Serial, Ethernet 
-      - `Router>enable`
-      - `Router#config terminal`
-      - `Router(config)#interface Serial0`
-      - `Router(config-if)#`
-    
+     - **Interface Configuration mode**: Ở chế độ này cho phép người quản trị có thể cấu hình cho router về interface như FastEthernet, Serial
+       - `Router>enable`
+       - `Router#config terminal`
+       - `Router (config)#interface Serial0`
+       - `Router(config-if)#`
+     - **Line Configuration mode**: ở chế độ này người quản trị có thể thay đổi bất kì với router và cpos thể kiểm soát truy cập trông router ở chế dộ này
+     
