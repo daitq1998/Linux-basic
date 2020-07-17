@@ -47,4 +47,9 @@
        - Confuration mode có nhiều mode nhỏ, ngoài cùng là các global configuration mode sau đó là các interface configuration mode, line configuration mode, routing configuration mode.
        ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/co%CC%80nig.PNG)
        ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/mode.PNG)
+    - **Interface Configuration mode**:  chế độ này cho pheps người quản trị cấu hình interface của router như Fast Ethernet, Serial, Ethernet 
+      - `Router>enable`
+      - `Router#config terminal`
+      - `Router(config)#interface Serial0`
+      - `Router(config-if)#`
     
