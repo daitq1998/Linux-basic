@@ -53,6 +53,6 @@
        - `Router(config-if)#`
      - **Line Configuration mode**: ở chế độ này người quản trị có thể thay đổi bất kì với router và cpos thể kiểm soát truy cập trong router ở chế độ này 
        - `Router>enable`
-       - `Router#config terminal
+       - `Router#config terminal`
        - `Router(config)#line console 0`
-       - `Router(config-line)#
+       - `Router(config-line)#`
