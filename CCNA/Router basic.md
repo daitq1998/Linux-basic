@@ -51,5 +51,8 @@
        - `Router#config terminal`
        - `Router (config)#interface Serial0`
        - `Router(config-if)#`
-     - **Line Configuration mode**: ở chế độ này người quản trị có thể thay đổi bất kì với router và cpos thể kiểm soát truy cập trông router ở chế dộ này
-     
+     - **Line Configuration mode**: ở chế độ này người quản trị có thể thay đổi bất kì với router và cpos thể kiểm soát truy cập trong router ở chế độ này 
+       - `Router>enable`
+       - `Router#config terminal
+       - `Router(config)#line console 0`
+       - `Router(config-line)#
