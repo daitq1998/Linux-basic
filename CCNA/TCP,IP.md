@@ -3,4 +3,11 @@
  - Một địa chỉ ip gồm hai phần là: `Network.Host` hay Net_id và Host_id. Các địa chỉ IP có cùng phần network là cũng mạng với nhau, mỗi địa chỉ IP là duy nhất
  - Địa chỉ IP hồm có hai loại:IPv4 và IPv6
 # 2. Phân lớp địa chỉ IPv4
-  
+  Đia chỉ IPv4 có 32bit chia làm 4 phần(octet) mooic phần gồm 8 bit đc ngăn cách nhau bởi dấu `.`. Địa chỉ IPv4 có thể biểu diễn dưới dạng thập phân hoặc nhị phân. Được chia thành 5 lớp A, B, C, D.
+  - Trong đó lớp A, B, C được dùng để gán cho các host
+  - Lớp D là địa chỉ multicast
+  - Lớp E không dùng
+   - **Lớp A**: ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/l%C6%A1%CC%81p%20A.PNG)
+      Ở Lớp A này có 1 octet đầu tiên làm phần Net còn 3 octet cuối làm phần host
+      - Bit đầu tiên của phần Net là bit 0: có nghĩa là octet đầu tiên được đánh từ 000000000 - 11111111 hay từ 0 - 127( gián trị đầu tiên"0" thì không dùng còn 127 lf địa chỉ loopback. Vậy địa chỉ lớp A có octet đầu tiên mang giá trị 00000001 đến 01111110 (hay từ 1 đến 126)
+      - Một mạng lớp A có thể đánh cho 2^24-2 địa chỉ host
