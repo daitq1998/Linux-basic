@@ -33,6 +33,12 @@
       - Lớp A: 255.0.0.0 hay /8
       - Lớp B: 255.255.0.0 hay /16
       - Lớp C: 255.255.255.0 hay /24
-
-   
-      
+# 4. Kỹ thuật chia mạng con
+   Subneting là một kỹ thuật cho phép tạo ra nhiều mạng con (subnetworks) từ một mạng lớn (major network). Với kỹ thuật này cho phép tao ra nhiều mạng con (subnetwork) vói số lượng host ít hơn phù hợp với ng sử dụng và tối ưu cho hệ thống
+   - Để thực hiện điều này, người ta sử dụng một số bit ở phần host_id tham gia vào phần net_id
+   ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/Subneting.PNG)
+   - Lưu ý:
+     - Nếu gọi n là số bit mượn ở phần host để chia subneting thì số mạng con (subnetwork) có thể chia là 2^n  (VD: nếu mượn 1 bit thì số mạng con sẽ là 2^1=2)
+     - Gọi m là số bit còn lại của phần host thì số host cho mạng con là 2^m-2
+     - n+m là số bit phần host của mạng ban đầu
+      - Ví dụ: Có địa chỉ mạng sau 192.168.1.0/24 có 24 bit ở phần net_id và 8 bit ở phần host_id và so subnetmask 255.255.255.0 hay /24
