@@ -50,6 +50,7 @@
      - Subnet mask tương ứng: Subnet mask ban đầu + n
        | n (Số bit mượn) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
        | --------------- | - | - | - | - | - | - | - | - |
+       | Bước nhảy | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
       - Ví dụ: Có địa chỉ mạng sau 192.168.1.0/24 có 24 bit ở phần net_id và 8 bit ở phần host_id và so subnetmask 255.255.255.0 hay /24 chia địa chỉ mạng trên thành 4 subnet
         - Bằng cách mượn 2 bit ở phần host so bit mượn n=2  => số bit host còn lại m=6 ==> có 2^6-2=62(subnetwork)
         
