@@ -53,8 +53,8 @@
        | Bước nhảy | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
       - Ví dụ: Có địa chỉ mạng sau 192.168.1.0/24 có 24 bit ở phần net_id và 8 bit ở phần host_id và so subnetmask 255.255.255.0 hay /24 chia địa chỉ mạng trên thành 4 subnet
         - Bằng cách mượn 2 bit ở phần host so bit mượn n=2  => số bit host còn lại m=6 ==> có 2^6-2=62(subnetwork)
-        | | Subnet 1 | Subnet 2 | Subnet 3 | Subnet 4 |
-        | - | ------ | -------- | -------- | -------- |
+        |   | Subnet 1 | Subnet 2 | Subnet 3 | Subnet 4 |
+        | - | -------- | -------- | -------- | -------- |
         | Địa chỉ mạng | 192.168.1.0 | 192.168.1.64 | 192.168.1.128 | 192.168.1.192 |
         | Địa chỉ host đầu | 192.168.1.1 | 192.168.1.65 | 192.168.1.129 | 192.168.1.193 |
         | Địa chỉ host cuối | 192.168.1.62 | 192.168.1.126 | 192.168.1.190 | 192.168.1.254 |
