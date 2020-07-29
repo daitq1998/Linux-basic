@@ -41,6 +41,10 @@
      - Nếu gọi n là số bit mượn ở phần host để chia subneting thì số mạng con (subnetwork) có thể chia là 2^n  (VD: nếu mượn 1 bit thì số mạng con sẽ là 2^1=2)
      - Gọi m là số bit còn lại của phần host thì số host cho mạng con là 2^m-2
      - n+m là số bit phần host của mạng ban đầu
+     - Số subnet có thể chia được:
+      - 2^n nếu có hỗ trợ subnet – zero
+      - 2^n – 2 nếu không hỗ trợ subnet – zero.
+     - Số host có thể có trên mỗi subnet: 2^m-2(host/subnet)
      - Với mỗi subnet:
       - Địa chỉ mạng: Octet bị mượn bội số với bước nhảy.
       - Địa chỉ host đầu: Địa chỉ network +1
@@ -54,7 +58,7 @@
      - Hay có thể:
        | Số lượng subnet hoặc host | 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 512 | 1024 | ... |
        | ------------------------- | - | - | - | - | -- | -- | -- | --- | --- | ---- | --- |
-       | Số bit | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | ... |
+       | Số bit mượn  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | ... |
       - Ví dụ: Có địa chỉ mạng sau 192.168.1.0/24 có 24 bit ở phần net_id và 8 bit ở phần host_id và so subnetmask 255.255.255.0 hay /24 chia địa chỉ mạng trên thành 4 subnet
         - Bằng cách mượn 2 bit ở phần host so bit mượn n=2  => số bit host còn lại m=6 ==> có 2^6-2=62(subnetwork)
           |   | Subnet 1 | Subnet 2 | Subnet 3 | Subnet 4 |
@@ -64,4 +68,4 @@
           | Địa chỉ host cuối | 192.168.1.62 | 192.168.1.126 | 192.168.1.190 | 192.168.1.254 |
           | Địa chỉ broadcast | 192.168.1.63 | 192.168.1.127 | 192.168.1.191 | 192.168.1.255 |
         - Subnetmask của dải địa chỉ này là: 255.255.255.192 hay  /26
-      
+          
