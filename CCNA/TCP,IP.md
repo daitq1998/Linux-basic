@@ -45,13 +45,14 @@
       - 2^n nếu có hỗ trợ subnet – zero
       - 2^n – 2 nếu không hỗ trợ subnet – zero.
      - Số host có thể có trên mỗi subnet: 2^m-2(host/subnet)
+     - bước nhảy : 2^m
      - Với mỗi subnet:
       - Địa chỉ mạng: Octet bị mượn bội số với bước nhảy.
       - Địa chỉ host đầu: Địa chỉ network +1
       - Địa chỉ host cuối: Địa chỉ broadcast -1
       - Địa chỉ broadcast: Địa chỉ mạng kế tiếp -1
       - Địa chỉ mạng kế tiếp: Địa chỉ mạng trước + bước nhảy
-     - Subnet mask tương ứng: Subnet mask ban đầu + n
+     - Subnet mask mới: 256 – Bước nhảy
        | n (Số bit mượn) | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
        | --------------- | - | - | - | - | - | - | - | - |
        | Bước nhảy | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
@@ -68,4 +69,15 @@
           | Địa chỉ host cuối | 192.168.1.62 | 192.168.1.126 | 192.168.1.190 | 192.168.1.254 |
           | Địa chỉ broadcast | 192.168.1.63 | 192.168.1.127 | 192.168.1.191 | 192.168.1.255 |
         - Subnetmask của dải địa chỉ này là: 255.255.255.192 hay  /26
+      - Ví dụ 2: một bài toán về ip cho một địa chỉ host. tìm xem địa chỉ mạng đó thuộc mạng nào
+          Cho địa chỉ host: 202.162.4.165
+          Subnet mask: 255.255.255.224 = 11111111.11111111.11111111.11100000
+           => số bit còn lại của phần host_id: m=5
+           => số bước nhảy: 2^m-2= 2^5=32
+           => lấy 165 : 32 =  5.15625
+           => lấy phần nguyên của kết quả trên: 5 x 32=160
+           => Host trên thuộc net_id: 202.162.4.160
+    # 5. Phương pháp VLSM
+       - 
+          
           
