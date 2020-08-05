@@ -76,9 +76,8 @@
            => số bước nhảy: 2^m-2= 2^5=32
            => lấy 165 : 32 =  5.15625
            => lấy phần nguyên của kết quả trên: 5 x 32=160
-           => Host trên thuộc net_id: 202.162.4.160
-           
-    # 5. Phương pháp VLSM
+           => Host trên thuộc net_id: 202.162.4.160    
+# 5. Phương pháp VLSM
        - 
           
           
