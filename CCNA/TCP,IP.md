@@ -78,3 +78,23 @@
            => lấy phần nguyên của kết quả trên: 5 x 32=160
            => Host trên thuộc net_id: 202.162.4.160    
 # 5. Phương pháp VLSM
+   - 1. VLSM là gì tại sao phải sử dụng nó
+       - Với VLSM người quản trị có thể chia địa chỉ mạng có subnet mask dài cho mạng có ít host và địa chỉ mạng có subnet mask ngắn cho mạng nhiều host. Khi sử dụng VLSM tf hệ thống phải chạy các giao thức định tuyến có hỗ trợ VLSM như: OSPF,IS-IS, EIGRP, RIPv2 và định tuyến cố định.
+       - VLSM cho phép một tổ chức sử dụng chiều dài subnet mask khác nhau trong cùng một địa chỉ mạng lớn. VLSM được gọi là chia subnet trong một subnet lớn hơn giúp tận dụng tối đa không gian địa chỉ 
+   - 2. Ví dụ 
+     - Cho một địa chỉ mạng 203.162.4.0/24 gồm 3 subnet ( HN,DN, HCM) 
+       - HN: 25 host
+       - HCM: 52 host
+       - DN: 22 host
+     - Với địa chỉ ip này mà chia thành các mạng con đều nhau như bên trên thì sẽ không đủ đáp ứng đủ đc các host
+       -  Số lượng host của 1 subnet ở mỗi nhánh >= số host yêu cầu của mỗi chi nhánh ===> Số lượng host (IP) của 1 subnet : 2^m-2
+       - ==> 2^m-2 >=(Số host ip yêu cầu của mỗi nhánh)
+        - Ta có :
+       - 2^m-2 >= 52
+       - ==> m=6 ; n=2
+        - Bước nhảy 2^m= 64  ==> Subnet id đầu tiên =0 ==>  203.162.4.0/26
+        - ==> và subnet mới = SN cũ + n
+        - Subnet_id kế tiếp= subnet hiện tại + bước nhảy
+        - ==> | Chi nhánh | Số IP yêu cầu | Subnet id | Subnet mask | Host đầu | Host cuối | Boadcast |
+              | --------- | ------------- | --------- | ----------- | -------- | --------- | -------- |
+              
