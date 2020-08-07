@@ -95,6 +95,6 @@
         - Bước nhảy 2^m= 64  ==> Subnet id đầu tiên =0 ==>  203.162.4.0/26
         - ==> và subnet mới = SN cũ + n
         - Subnet_id kế tiếp= subnet hiện tại + bước nhảy
-        - ==> | Chi nhánh | Số IP yêu cầu | Subnet id | Subnet mask | Host đầu | Host cuối | Boadcast |
-              | --------- | ------------- | --------- | ----------- | -------- | --------- | -------- |
+        -  | Chi nhánh | Số IP yêu cầu | Subnet id | Subnet mask | Host đầu | Host cuối | Boadcast |
+           | --------- | ------------- | --------- | ----------- | -------- | --------- | -------- |
               
