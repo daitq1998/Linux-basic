@@ -103,8 +103,8 @@
      -  Và thực tế thì VLSM là cách chia được dùng để làm công việc chia Subnet ID của các doanh nghiệp
 # 6. Phương thức kết nối
    - Trong hệ thống IPv4 các host có thể kết nối với nhau bằng một trong những phương thức truyền tải sau:
-     - Unicast
-     - Broadcast
-     - Multicast
+     - Unicast: Là gói tin gửi từ một host này đến một host khác trong hệ thống mạng 
+     - Broadcast: Là phương thức gửi gói tin từ một host đến toàn bộ các host còn lại trong hệ thống mạng
+     - Multicast: Là phương thức gửi gói tin từ một host này đến một nhóm host khác được chỉ định hoặc xác định trước có thế là ở một hệ thống khác giảm tải hệ thống 
      
 
