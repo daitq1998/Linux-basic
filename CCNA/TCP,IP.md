@@ -101,3 +101,10 @@
            | HN | 25 | 203.162.4.64 | /27 | 203.162.4.65 | 203.162.4.94 |203.162.4.95 |
            | DN | 22 | 203.162.4.96 | /27 | 203.162.4.97 |203.162.4.126 | 203.162.4.127 |
      -  Và thực tế thì VLSM là cách chia được dùng để làm công việc chia Subnet ID của các doanh nghiệp
+# 6. Phương thức kết nối
+   - Trong hệ thống IPv4 các host có thể kết nối với nhau bằng một trong những phương thức truyền tải sau:
+     - Unicast
+     - Broadcast
+     - Multicast
+     
+
