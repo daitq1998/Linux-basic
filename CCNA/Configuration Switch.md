@@ -4,4 +4,11 @@
 
 CSMA/CA: Tránh xung đột và CSMA/CD: phát hiện xung đột, và sử dụng ACK để xác nhận thay vì tùy ý sử dụng môi trường truyền khi có xung đột xảy ra việc sử dụng ACK rất đơn giản khi một thiết bị không giây gửi gói tin, đầu nhận sẽ đáp lại bằng ACK nếu như gói tin đó được nhận đúng và đầy đủ, nếu đâu kia không nhận được ACK thì xem ra nó đã có xung đột xảy ra và phải truyền lại gói tin
 
-**Collision and Broadcast domains
+**Collision and Broadcast domains**: Miền xung đột là các đoạn mạng Ethernet hay Fast Ethernet nằm giữa một cặp bridge hay các thiết bị lớp 2 khác. Tring miền xung đột thiết bị gửi tín hiệu đến hub thì tất cả các thiêt bị đều nhận được. Các Hub mở rộng Collision domain còn các switch tạo ra các Collision domain
+
+![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/collision%20domain.png)
+
+**Broadcast domains**: gọi là miền quảng bá nó là một vùng trong đó thông tin được gửi tới tất cả các thiết bị được kết nối. Thiết bị giới hạn bởi các mền quảng bá là các router và cũng chính rouer tạo ra các miền quảng bá. Và như vậy mối router sẽ là một Broadcast domain một broadcast domains gồm nhiều Collistion domains
+
+![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/Collision%20and%20broadcast%20domain.png)
+
