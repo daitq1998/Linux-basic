@@ -12,3 +12,4 @@ CSMA/CA: Tránh xung đột và CSMA/CD: phát hiện xung đột, và sử dụ
 
 ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/Collision%20and%20broadcast%20domain.png)
 
+
