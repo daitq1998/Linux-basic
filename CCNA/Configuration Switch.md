@@ -15,4 +15,8 @@ CSMA/CA: Tránh xung đột và CSMA/CD: phát hiện xung đột, và sử dụ
 ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/Collision%20and%20broadcast%20domain.png)
 
 # Configuration Switch
+  **Câu lệnh cơ bản** 
+  
+  Để kết nối tới một switch có thể kết nối qua cổng console hay trên một chiếc máy tính
+   - 
 
