@@ -16,7 +16,9 @@ CSMA/CA: Tránh xung đột và CSMA/CD: phát hiện xung đột, và sử dụ
 
 # Configuration Switch
   **Câu lệnh cơ bản**: Để kết nối tới một switch có thể kết nối qua cổng console hay trên một chiếc máy tính
+  
   ![](https://github.com/daitq1998/Linux-basic/blob/master/CCNA/png/M%E1%BB%99t%20s%E1%BB%91%20c%C3%A2u%20l%E1%BB%87nh%20show.jpg)
+  
   Câu lệnh `show vesion`: Là lệnh dùng để show ra các thông tin của switch đó bao gồm 
   
    - Địa chỉ MAC
