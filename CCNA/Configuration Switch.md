@@ -27,5 +27,3 @@ CSMA/CA: Tránh xung đột và CSMA/CD: phát hiện xung đột, và sử dụ
    Để thay đổi tên switch sử dụng lênh : `Switch(config)#hostname TTY`
    
    VTY là các cổng ảo trên các thiết bị router và switch để truy cập từ xa với các giao thức telnet, ssh. Các cổng đấy bị đóng khi người quản trị xác thực cấu hình phương thức cho các dòng vty, khi cấu hình vty ta thấy có các cổng từ 0-4 hay 0-15
-# Virtual Local Area Networks (VLAN)
-  VLAN(Virtual Local Area Networks)
